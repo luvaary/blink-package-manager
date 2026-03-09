@@ -21,6 +21,15 @@ Blink is a source-based package manager designed for performance and control. It
 - **Cross-Distro Ready:** Can be adapted for other Linux distributions with minimal effort.
 - **Extensible:** Modular design allows for easy plugin and feature extensions.
 
+## Documentation
+
+- [CLI Usage](docs/cli-usage.md) — Command reference with examples and exit codes
+- [Manifest Format](docs/manifest-format.md) — Package recipe and configuration TOML schemas
+- [Repository Workflow](docs/repository-workflow.md) — Creating and publishing package repositories
+- [Packaging Workflow](docs/packaging-workflow.md) — Build lifecycle, dependency resolution, and security checks
+- [Security Policy](SECURITY.md) — Vulnerability reporting and supported versions
+- [Changelog](CHANGELOG.md) — Release history
+
 ## Contribute
 
 Please follow the instructions in [CONTRIBUTING.md](https://github.com/Aperture-OS/blink-package-manager/blob/main/CONTRIBUTING.md) for guidelines on contributing to Blink.
