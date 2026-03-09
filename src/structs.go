@@ -30,14 +30,14 @@ import (
 var validSHA256Re = regexp.MustCompile(`^[a-fA-F0-9]{64}$`)
 
 var allowedBuildEnvKeys = map[string]bool{
-	"CC":             true,
-	"CXX":            true,
-	"CFLAGS":         true,
-	"CXXFLAGS":       true,
-	"LDFLAGS":        true,
-	"PREFIX":         true,
-	"DESTDIR":        true,
-	"MAKEFLAGS":      true,
+	"CC":              true,
+	"CXX":             true,
+	"CFLAGS":          true,
+	"CXXFLAGS":        true,
+	"LDFLAGS":         true,
+	"PREFIX":          true,
+	"DESTDIR":         true,
+	"MAKEFLAGS":       true,
 	"PKG_CONFIG_PATH": true,
 }
 
@@ -50,12 +50,12 @@ var allowedSourceTypes = map[string]bool{
 }
 
 type PackageInfo struct {
-	Name        string   `json:"name"`
-	Version     string   `json:"version"`
-	Release     int      `json:"release"`
-	Description string   `json:"description"`
-	Author      string   `json:"author"`
-	License     string   `json:"license"`
+	Name        string `json:"name"`
+	Version     string `json:"version"`
+	Release     int    `json:"release"`
+	Description string `json:"description"`
+	Author      string `json:"author"`
+	License     string `json:"license"`
 	Source      struct {
 		URL    string `json:"url"`
 		Type   string `json:"type"`
